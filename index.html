@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #B8B8B8;">
+    <div class="header-main">
+        <div>
+         <img class="logo" src="resources\logo.png" alt="Logo">
+        </div>
+        <div class="navbar-main">
+            <ul class="list">
+             <li id="list-hiw">How It Works</li>
+            </ul>
+            <ul class="list">
+              <li id="list-info">Info</li>
+            </ul>
+            <ul class="list">
+              <li id="list-connect">Connect</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main_div">
+     <div class="upper_section" id="tsparticles-canvas-el">
+        <!-- <canvas class="tsparticles-canvas-el"></canvas> -->
+        <div class="main_text">
+            <h1>We dont wait,<br><span class="color-reverse">we Create!</span></h1>
+            <h4>A community for game developers</h4>
+        </div>
+        <div class="remote_image">
+            <img id="remote_pic" src="resources\My project-1.png" alt="Remote">
+        </div>
+     </div>
+    </div>
+    <div class="bottom-section">
+        <div class="button-section">
+            <button class="button-think buttons" onclick="gamer('think')">Think</button>
+            <button class="button-design buttons" onclick="gamer('design')">Design</button>
+            <button class="button-create buttons" onclick="gamer('create')">Create</button>
+        </div>
+        <div class="tab-content">
+            <div class="default-content" id="default">
+                <img src="" alt="default Text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into </p>
+            </div>
+            <div class="main-lower" id="think" hidden>
+                <img class="bottom-img" id="think-img" src="resources\think_main_cropped.svg" alt="think Image">
+                <ul class="tab-text">
+                    <li><h3>Connect with people</h3></li>
+                    <li><h3 class="color-reverse">Share your ideas</h3></li>
+                    <li><h3>Follow other developers</h3></li>
+                </ul>
+            </div>
+            <div class="main-lower" id="design" hidden>
+                <img class="bottom-img" src="resources\design_main_cropped.svg" alt="Design Image">
+                <ul class="tab-text">
+                    <li><h3 class="color-reverse">Plan your project</h3></li>
+                    <li><h3>Doodle your ideas using our tools</h3></li>
+                    <li><h3 class="color-reverse">Get your designs reviewed</h3></li>
+                </ul>
+            </div>
+            <div class="main-lower" id="create" hidden>
+                <img class="bottom-img" src="resources\create_main_cropped.svg" alt="Create Image" id="create-tab">
+                <ul class="tab-text">
+                    <li><h3>Collaborate or go Solo</h3></li>
+                    <li><h3 class="color-reverse">Track the progress of all your projects</h3></li>
+                    <li><h3>Share your creations with the world</h3></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.1/tsparticles.min.js"
+    integrity="sha512-PYHWDEuXOTJ9MZ+/QHqkbgiEYZ+LImQv3i/9NyYOABFvK37e4q4Wg7aQDN1JpoGiEu1TYZh6JMrZluZox2gbDA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="particle_style.js"></script>
+  <script src="gamer.js"></script>
+</body>
+</html>
